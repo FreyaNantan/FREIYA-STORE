@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Freiya Store E-Commerce</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#f8f8f8;
+}
+
+
+/* HEADER */
+
+header{
+    background:#172ea6;
+    color:white;
+    padding:20px;
+}
+
+header h1{
+    display:inline;
+}
+
+nav{
+    float:right;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+}
+
+
+/* HERO */
+ 
+.hero{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:50px;
+    background:#e5e5ff;
+}
+
+.hero h2{
+    font-size:40px;
+}
+
+
+/* BUTTON */
+
+button{
+    background:#172ea6;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#172ea6;
+}
+
+
+/* PRODUK */
+
+.container{
+    padding:30px;
+}
+
+.produk{
+    background:white;
+    width:250px;
+    display:inline-block;
+    margin:15px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 0 10px #ccc;
+}
+
+.produk img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+}
+
+
+/* TABLE */
+
+table{
+    width:95%;
+    margin:30px auto;
+    border-collapse:collapse;
+    background:#172ea6;
+    color:white;
+}
+
+td,th{
+    border:1px solid black;
+    padding:10px;
+}
+
+
+/* FORM */
+
+form{
+    background:white;
+    padding:20px;
+    width:400px;
+    margin:20px;
+}
+
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+
+footer{
+    background:#172ea6;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.bar{
+    background: #172ea6;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;       /* Jarak atas-bawah dikecilkan jadi 10px agar tidak terlalu besar */
+    display: inline-block;    /* Wajib! Membuat kotak otomatis mengikuti panjang teks */
+    cursor: pointer;
+    border-radius: 20px; border: 1px solid #000000;
+}
+
+.garis{
+    background: #172ea6;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;       /* Jarak atas-bawah dikecilkan jadi 10px agar tidak terlalu besar */
+    border-radius: 20px; border: 1px solid #000000;
+}
+
+.gallery {
+    width:180px;
+    border-radius:10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll::-webkit-scrollbar-thumb{background:#003fb4}
+.scroll::-webkit-scrollbar{height:8px}
+.scroll::-webkit-scrollbar-thumb{background:#003fb4;border-radius:10px}
+.scroll::-webkit-scrollbar-track{background:#000000}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+
+<h1>Freiya Store</h1>
+
+<nav>
+<a href="Endorse.html">Home</a>
+<a style="transition: 0.25s ease;" onclick="location.href='#produk'">Produk</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSd6luY1gSS2VVeQScDyHQeGJ0qBrAM3F5DxOSHchzlTL2411w/viewform?usp=header">Lapor bug</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div>
+
+<h2 class="bar">
+Aplikasi Pelajaran OPEN MEE ANALISIS<br>
+Jadi Lebih Mudah Dan Menyenangkan<br>
+</h2>
+
+<p style="margin-top: 30px;">
+OPEN MEE ANALISIS TANAMAN adalah Menganalisis pertumbuhan tanaman dengan visual.<br>
+OPEN MEE melatih dan analisis visual otak agar tidak lupa menyiram tanaman<br>
+
+
+</p>
+
+<button class="bar"
+        onclick="window.location.href='https://www.mediafire.com/file/4eq2b4pqycehtue/Open_Mee_Sunflower.apk/file';"
+        style="margin-top: 30px;">
+    Download Open Mee Sunflower Versi Android (Beta)
+</button>
+
+<button class="bar"
+        onclick="window.location.href='https://www.mediafire.com/file/ankncho76c136re/Open_Mee_Sunflower.zip/file';"
+        style="margin-top: 30px;">
+    Download Open Mee Sunflower Versi Window (Beta)
+</button>
+
+</div>
+
+<img src="logo apk/bunga.png" alt="game" width="400" style="border: 1px solid #000000; margin: 30px; width: 20%;">
+
+</section>
+
+
+<section class="container">
+
+<div class="scroll" style="border:1px solid #000000;display:flex;overflow-x:auto;gap:10px">
+    <img width="40%" src="halaman/gambar/gambar (1).png">
+    <img width="40%" src="halaman/gambar/gambar (2).png">
+    <img width="40%" src="halaman/gambar/gambar (3).png">
+    <img width="40%" src="halaman/gambar/gambar (4).png">
+    <img width="40%" src="halaman/gambar/gambar (5).png">
+</div>
+
+<h2 align="center" class="garis" style="margin-top: 30px;">Daftar Versi Aplikasi</h2>
+
+<table>
+
+<tr>
+<th>Aplikasi</th>
+<th>Versi</th>
+</tr>
+
+<tr>
+<td>HTML</td>
+<td>1.0.0.0</td>
+</tr>
+
+</table>
+
+<h2 class="garis" style="margin-bottom: 30px;">Video Gif Singkat Permainan</h2>
+
+<img alt="game" width="80%" style="display:block; margin:0 auto 30px; border:1px solid #000000;" src="logo apk/HAK CIPTA FREIYA STORE (1).gif">
+
+<h2 id="produk" class="garis">Produk Aplikasi Lainnya</h2>
+
+
+<div class="produk">
+
+<img src="logo apk/HTML.png">
+
+<h3>HTML</h3>
+
+<p>DOWNLOAD</p>
+
+<button class="bar" onclick="window.location.href='Form pemesanan.html';">
+DOWNLOAD
+</button>
+
+</div>
+
+
+<div class="produk">
+
+<img src="logo apk/bunga.png">
+
+<h3>OPEN MEE STATISTIKA</h3>
+
+<p>DOWNLOAD</p>
+
+<button class="bar" onclick="window.location.href='Form pemesanan2.html';">
+DOWNLOAD
+</button>
+
+</div>
+
+<div class="produk">
+
+<img src="logo apk/TANDATANYA.png">
+
+<h3>HTML</h3>
+
+<p>DOWNLOAD</p>
+
+<button class="bar" onclick="window.location.href='-';">
+DOWNLOAD
+</button>
+
+</div>
+
+</div>
+
+<div class="produk">
+
+<img src="logo apk/TANDATANYA.png">
+
+<h3>HTML</h3>
+
+<p>DOWNLOAD</p>
+
+<button class="bar" onclick="window.location.href='-';">
+DOWNLOAD
+</button>
+
+</div>
+
+</div>
+
+<div class="produk">
+
+<img src="logo apk/TANDATANYA.png">
+
+<h3>HTML</h3>
+
+<p>DOWNLOAD</p>
+
+<button class="bar" onclick="window.location.href='-';">
+DOWNLOAD
+</button>
+
+</div>
+
+</section>
+<footer>
+
+<p>
+© 2026 Freiya Store E-Commerce
+</p>
+
+</footer>
+
+
+<script>
+
+function beli(nama){
+
+alert(
+"Produk "+nama+" berhasil masuk keranjang"
+);
+
+}
+
+
+function keranjang(){
+
+alert(
+"Selamat datang di Freiya Store"
+);
+
+}
+
+</script>
+
+
+</body>
+</html>

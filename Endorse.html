@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Freiya Store E-Commerce</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#f8f8f8;
+}
+
+
+/* HEADER */
+
+header{
+    background:#0099ff;
+    color:white;
+    padding:20px;
+}
+
+header h1{
+    display:inline;
+}
+
+nav{
+    float:right;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+}
+
+
+/* HERO */
+
+.hero{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:50px;
+    background:#e5f3ff;
+}
+
+.hero h2{
+    font-size:40px;
+}
+
+
+/* BUTTON */
+
+button{
+    background:#0099ff;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#0099ff;
+}
+
+
+/* PRODUK */
+
+.container{
+    padding:30px;
+}
+
+.produk{
+    background:white;
+    width:250px;
+    display:inline-block;
+    margin:15px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 0 10px #2389e9;
+}
+
+.produk img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    color: rgb(0, 0, 0);
+    border: 1px solid #002442;
+}
+
+
+/* TABLE */
+
+table{
+    width:80%;
+    margin:30px auto;
+    border-collapse:collapse;
+}
+
+td,th{
+    border:1px solid black;
+    padding:10px;
+}
+
+
+/* FORM */
+
+form{
+    background:white;
+    padding:20px;
+    width:400px;
+    margin:20px;
+}
+
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+
+footer{
+    background:#0099ff;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.bar{
+    background: #0099ff;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;       /* Jarak atas-bawah dikecilkan jadi 10px agar tidak terlalu besar */
+    display: inline-block;    /* Wajib! Membuat kotak otomatis mengikuti panjang teks */
+    cursor: pointer;
+    border-radius: 20px; border: 1px solid #003fb4;
+}
+
+.gif {
+    width: 350px;
+    
+}
+
+.garis{
+    background: #0099ff;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;       /* Jarak atas-bawah dikecilkan jadi 10px agar tidak terlalu besar */
+    border-radius: 20px; border: 1px solid #003fb4;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+
+<h1>Freiya Store</h1>
+
+<nav>
+<a href="Endorse.html">Home</a>
+<a style="transition: 0.25s ease;" onclick="location.href='#produk'">Produk</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSd6luY1gSS2VVeQScDyHQeGJ0qBrAM3F5DxOSHchzlTL2411w/viewform?usp=header">Lapor bug</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div>
+
+<h2 class="bar">
+Aplikasi Pembantu Online<br>
+Jadi Lebih Mudah<br>
+</h2>
+
+<p style="margin-top: 30px;">
+Temukan aplikasi untuk membantu anda dalam teknologi dan 
+</p>
+
+<button class="bar" style="margin-top: 30px;" onclick="keranjang()">
+Download
+</button>
+
+</div>
+
+<img src="logo apk/Teknologi.gif" class="gif" alt="game" style="border: 1px solid #003fb4; margin: 30px; width: 20%; ">
+
+</section>
+
+
+<section class="container">
+
+<h2 class="garis">Produk Terbaru</h2>
+
+<div class="produk">
+
+<img src="logo apk/HTML.png">
+
+<h3>HTML</h3>
+
+<p>DOWNLOAD</p>
+
+<button class="bar" onclick="window.location.href='Form pemesanan.html';">
+DOWNLOAD
+</button>
+
+</div>
+
+
+<div class="produk">
+
+<img src="logo apk/bunga.png">
+
+<h3>OPEN MEE STATISTIKA</h3>
+
+<p>DOWNLOAD</p>
+
+<button class="bar" onclick="window.location.href='Form pemesanan2.html';">
+DOWNLOAD
+</button>
+
+</div>
+
+<div class="produk">
+
+<img src="logo apk/TANDATANYA.png">
+
+<h3>HTML</h3>
+
+<p>DOWNLOAD</p>
+
+<button class="bar" onclick="window.location.href='-';">
+DOWNLOAD
+</button>
+
+</div>
+
+</div>
+
+<div class="produk">
+
+<img src="logo apk/TANDATANYA.png">
+
+<h3>HTML</h3>
+
+<p>DOWNLOAD</p>
+
+<button class="bar" onclick="window.location.href='-';">
+DOWNLOAD
+</button>
+
+</div>
+
+</div>
+
+<div class="produk">
+
+<img src="logo apk/TANDATANYA.png">
+
+<h3>HTML</h3>
+
+<p>DOWNLOAD</p>
+
+<button class="bar" onclick="window.location.href='-';">
+DOWNLOAD
+</button>
+
+</div>
+
+</section>
+<footer>
+
+<p>
+© 2026 Freiya Store E-Commerce
+</p>
+
+</footer>
+
+
+<script>
+
+function beli(nama){
+
+alert(
+"Produk "+nama+" berhasil masuk keranjang"
+);
+
+}
+
+
+function keranjang(){
+
+alert(
+"Selamat datang di Freiya Store resmi dibuka untuk kebutuhan"
+);
+
+}
+
+</script>
+
+
+</body>
+</html>
