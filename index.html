@@ -1,321 +1,582 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Freiya Store E-Commerce</title>
+<title>Unduh CV dan Portofolio - Freiya Nantan Keona Sarif</title>
 
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial;
-}
-
 body{
-    background:#f8f8f8;
-}
-
-
-/* HEADER */
-
-header{
-    background:#0099ff;
-    color:white;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    margin:0;
     padding:20px;
 }
 
-header h1{
-    display:inline;
+html {
+    scroll-behavior: smooth;
 }
 
-nav{
-    float:right;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:15px;
-}
-
-
-/* HERO */
-
-.hero{
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    padding:50px;
-    background:#e5f3ff;
-}
-
-.hero h2{
-    font-size:40px;
-}
-
-
-/* BUTTON */
-
-button{
-    background:#0099ff;
-    color:white;
-    border:none;
-    padding:12px 20px;
-    cursor:pointer;
-    border-radius:5px;
-}
-
-button:hover{
-    background:#0099ff;
-}
-
-
-/* PRODUK */
-
-.container{
-    padding:30px;
-}
-
-.produk{
+.cv{
+    max-width:1000px;
+    margin:auto;
     background:white;
-    width:250px;
-    display:inline-block;
-    margin:15px;
-    padding:15px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.header{
+    background-image:url("gambar1.png");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px 20px 0 0;
     text-align:center;
-    box-shadow:0 0 10px #2389e9;
+    padding:100px;
 }
 
-.produk img{
-    width:200px;
-    height:200px;
+.header img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
     object-fit:cover;
-    color: rgb(0, 0, 0);
-    border: 1px solid #002442;
 }
 
+.content{
+    display:flex;
+    flex-wrap:wrap;
+}
 
-/* TABLE */
+.left{
+    flex:1;
+    min-width:250px;
+    background:#f3f4f6;
+    padding:20px;
+}
+
+.right{
+    flex:2;
+    min-width:300px;
+    padding:20px;
+}
+
+h1 {
+    color:white;
+    text-shadow:
+        -2px -2px 0 #2563eb,
+         2px -2px 0 #2563eb,
+        -2px  2px 0 #2563eb,
+         2px  2px 0 #2563eb;
+}
+
+h2{
+    color:#1e3a8a;
+    border-bottom:2px solid #1e3a8a;
+    padding-bottom:5px;
+}
+
+.hhk{
+    color:rgb(0, 0, 0);
+}
+
+.skill{
+    background:#2563eb;
+    color:white;
+    display:inline-block;
+    padding:6px 12px;
+    margin:4px;
+    border-radius:20px;
+}
 
 table{
-    width:80%;
-    margin:30px auto;
-    border-collapse:collapse;
-}
-
-td,th{
-    border:1px solid black;
-    padding:10px;
-}
-
-
-/* FORM */
-
-form{
-    background:white;
-    padding:20px;
-    width:400px;
-    margin:20px;
-}
-
-input,textarea{
     width:100%;
-    padding:10px;
-    margin:10px 0;
+    border-collapse:collapse;
+    margin-top:10px;
+    margin-bottom:20px;
 }
 
+table,th,td{
+    border:1px solid #000000;
+}
 
-footer{
-    background:#0099ff;
+th{
+    background: #2563eb;
     color:white;
-    padding:20px;
+}
+
+th,td{
+    padding:10px;
+    text-align:left;
+}
+
+.gallery{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.gallery img{
+    width:180px;
+    border-radius:10px;
+}
+
+a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+.footer{
+    background:#1e3a8a;
+    color:white;
     text-align:center;
+    padding:15px;
 }
 
-.bar{
-    background: #0099ff;
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 10px 20px;       /* Jarak atas-bawah dikecilkan jadi 10px agar tidak terlalu besar */
-    display: inline-block;    /* Wajib! Membuat kotak otomatis mengikuti panjang teks */
-    cursor: pointer;
-    border-radius: 20px; border: 1px solid #003fb4;
+.outline {
+    color:white;
+    text-shadow:
+        -2px -2px 0 #2563eb,
+         2px -2px 0 #2563eb,
+        -2px  2px 0 #2563eb,
+         2px  2px 0 #2563eb;
 }
 
-.gif {
-    width: 350px;
+video{
+    width: 92%;
+    margin-top:10px;
+    margin-bottom:20px;
+    border-radius:10px;
+    border: 1px solid #000000;
     
 }
 
-.garis{
-    background: #0099ff;
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 10px 20px;       /* Jarak atas-bawah dikecilkan jadi 10px agar tidak terlalu besar */
-    border-radius: 20px; border: 1px solid #003fb4;
+button {
+    animation: shake 3.5s infinite;
+}
+
+@keyframes shake {
+    0%, 14% { transform: rotate(0); }
+    2%, 6%, 10% { transform: rotate(-5deg); }
+    4%, 8%, 12% { transform: rotate(5deg); }
+    14%, 100% { transform: rotate(0); }
 }
 
 </style>
 
 </head>
-
-
 <body>
 
-<header>
+<div class="cv">
 
-<h1>Freiya Store</h1>
+    <!-- Bagian Atas CV -->
+    <div id="cv" class="header">
+        <img src="gambar_cv_4.png" alt="Foto Profil">
+        <h1>Freiya Nantan Keona Sarif</h1>
+        <div class="outline"><p>Curriculum Vitae | Mahasiswa Informatika | Desainer Grafis | Animator</p></div>
+    </div>
 
-<nav>
-<a href="index.html">Home</a>
-<a style="transition: 0.25s ease;" onclick="location.href='#produk'">Produk</a>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSd6luY1gSS2VVeQScDyHQeGJ0qBrAM3F5DxOSHchzlTL2411w/viewform?usp=header">Lapor bug</a>
-</nav>
+    <!-- Konten CV -->
+    <div class="content">
 
-</header>
+        <!-- Kolom Kiri -->
+        <div class="left">
+
+            <h2>Informasi Kontak</h2>
+            <p><b>Nama Lengkap:</b> Freiya Nantan Keona Sarif</p>
+            <p><b>Tanggal Lahir:</b> 03/09/2006</p>
+            <p><b>Email:</b> freyanantan@email.com</p>
+            <p><b>Nomor Telepon:</b> +62 896 6114 0106</p>
+            <p><b>Alamat:</b> Jawa Barat, Indonesia</p>
+
+            <h2>Keahlian</h2>
+
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">Unreal Engine</span>
+            <span class="skill">Phyton</span>
+            <span class="skill">Blender</span>
+            <span class="skill">Desain Grafis</span>
+
+            <h2>Tautan Media Sosial</h2>
+
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/freiya_ceo/" target="_blank">
+                        Instagram
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.youtube.com/@nantanindo1935" target="_blank">
+                        YouTube
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.tiktok.com/@freyanantan?lang=id-ID" target="_blank">
+                        Tiktok
+                    </a>
+                </li>
+            </ul>
+
+            <h2>Navigasi</h2>
+
+            <button style="background: #2563eb;
+             color: rgb(255, 255, 255);
+             border: 1px solid #000000;
+             border-radius: 12px;
+             padding: 10px 20px;
+             cursor: pointer;
+             font-size: 16px;
+             transition: 0.25s ease;" onclick="location.href='#cv'">CV</button>
+
+             <button style="background: #2563eb;
+             color: rgb(255, 255, 255);
+             border: 1px solid #000000;
+             border-radius: 12px;
+             padding: 10px 20px;
+             cursor: pointer;
+             font-size: 16px;
+             transition: 0.25s ease;" onclick="location.href='#pt'">Portofolio</button>
+
+             <button style="background: #2563eb;
+             color: rgb(255, 255, 255);
+             border: 1px solid #000000;
+             border-radius: 12px;
+             padding: 10px 20px;
+             cursor: pointer;
+             font-size: 16px;
+             transition: 0.25s ease;" onclick="location.href='#video'">Proyek</button>
+
+             <h2>Toko aplikasi dan addon blender</h2>
+
+             <a href="https://freyanantan.github.io/FREIYA-STORE/" target="_blank" style="text-decoration: none;">
+             <button style="background: #2563eb;
+             color: rgb(255, 255, 255);
+             border: 1px solid #000000;
+             border-radius: 12px;
+             padding: 10px 20px;
+             cursor: pointer;
+             font-size: 16px;
+             transition: 0.25s ease;">
+             Freiya Store
+            </button>
+            </a>
+           
+
+             
+
+        </div>
+
+        <!-- Kolom Kanan -->
+        <div class="right">
+            
+
+            <h2>[Universitas Siber Asia] – [Informatika]</h2>
+            <p>Universitas Siber Asia – PJJ Informatika March 2026 – Present</p>
+ 
+            <h2>Pendidikan</h2>
+
+            <table>
+                <tr>
+                    <th>Tahun</th>
+                    <th>Institusi</th>
+                </tr>
+
+                <tr>
+                    <td>2006 - 2025</td>
+                    <td>TK, SD, SMP, dan SMA</td>
+                </tr>
+
+                <tr>
+                    <td>2026 - Sekarang</td>
+                    <td>Universitas Siber Asia</td>
+                </tr>
+            </table>
+            
+            <h2>IPK</h2>
+            <p>[N/A]</p>
+
+            <h2>Mata Kuliah yang Relevan</h2>
+
+            <table>
+                <tr>
+                    <th>Mata Kuliah</th>
+                    <th>Tingkat</th>
+                </tr>
+
+                <tr>
+                    <td>Algorithms and Data Structure</td>
+                    <td>Mahir</td>
+                </tr>
+
+                <tr>
+                    <td>Database Systems</td>
+                    <td>Menengah</td>
+                </tr>
+
+                <tr>
+                    <td>Web Programming</td>
+                    <td>Mahir</td>
+                </tr>
+
+                <tr>
+                    <td>Calculus</td>
+                    <td>Menengah</td>
+                </tr>
+
+                <tr>
+                    <td>Statistics</td>
+                    <td>Menengah</td>
+                </tr>
+
+            </table>
+
+            <h2>Keahlian Teknis</h2>
+
+            <table>
+                <tr>
+                    <th>Keahlian Teknis</th>
+                    <th>Keterangan</th>
+                </tr>
+
+                <tr>
+                    <td>Pemrograman dan Pengembangan</td>
+                    <td>HTML, CSS, JavaScript, dasar perancangan basis data, serta pengembangan sistem autentikasi dan login.</td>
+                </tr>
+
+                <tr>
+                    <td>Pengembangan Game</td>
+                    <td>Godot Basic Pengembangan Game</td>
+                </tr>
+
+                <tr>
+                    <td>Desain 3D</td>
+                    <td>Blender (Pemodelan dan Animasi 3D)</td>
+                </tr>
+
+                <tr>
+                    <td>Ilmu Komputer</td>
+                    <td>Algoritma dan Struktur Data.</td>
+                </tr>
+
+                <tr>
+                    <td>Kecerdasan Buatan Generatif</td>
+                    <td>Algoritma dan Struktur Data.</td>
+                </tr>
+
+            </table>
+
+            <h2>Keterampilan Nonteknis</h2>
+
+            <p>Pemecahan Masalah, Berpikir Kritis, Cepat Belajar, Adaptasi, Kreativitas, dan Manajemen Waktu</p>
+
+            <h2>Proyek / Pengalaman</h2>
+
+            <p>1. Peserta Bootcamp AI – UNSIA Festival 2026</p>
+             <ul>
+                <li>Mengikuti kegiatan Bootcamp Kecerdasan Buatan (AI).</li>
+                <li>Mempelajari dasar-dasar Kecerdasan Buatan.</li>
+                <li>Menyelesaikan kegiatan praktik dan tugas terkait Kecerdasan Buatan.</li>
+            </ul>
+            <p>2. Menerapkan autentikasi pengguna menggunakan Firebase dalam proyek Unreal Engine.</p>
+
+            <h2>Prestasi / Sertifikasi</h2>
+            <ul>
+                <li>Sertifikat Bootcamp AI – UNSIA Festival 2026</li>
+                <li>Pemenang Kategori IT Bootcamp – UNSIA Festival 2026</li>
+
+            </ul>
 
 
-<section class="hero">
+            <h2>Pengalaman</h2>
 
-<div>
+            <ul>
+                <li>Mengembangkan situs web menggunakan HTML dan CSS.</li>
+                <li>Merancang dan mengembangkan game interaktif menggunakan Unreal Engine dan Godot.</li>
+                <li>Membuat animasi 3D menggunakan Blender.</li>
+            </ul>
 
-<h2 class="bar">
-Aplikasi Pembantu Online<br>
-Jadi Lebih Mudah<br>
-</h2>
+            <h2>Bahasa</h2>
 
-<p style="margin-top: 30px;">
-Temukan aplikasi yang membantu Anda dalam teknologi dan kehidupan sehari-hari. <br>
-Jelajahi berbagai solusi digital yang praktis, mudah digunakan, dan <br>
-dapat membantu meningkatkan produktivitas Anda.<br>
-</p>
+            <table>
+                <tr>
+                    <th>Bahasa</th>
+                    <th>Tingkat</th>
+                </tr>
 
-<button class="bar" style="margin-top: 30px;" onclick="keranjang()">
-Download
-</button>
+                <tr>
+                    <td>English</td>
+                    <td>Menengah, During the practice run</td>
+                </tr>
+
+                <tr>
+                    <td>Bahasa Indonesia</td>
+                    <td>Mahir</td>
+                </tr>
+
+            </table>
+
+            <h2>Hobi</h2>
+
+            <ol>
+                <li>Animasi</li>
+                <li>Pemrograman</li>
+            </ol>
+
+            <h2 id="pt">Portofolio – Program SMT 2025</h2>
+            <div class="hhk"><b style="color: #1e3a8a;">Freiya Nantan Keona Sarif</b></div>
+            <p>Universitas Siber Asia</p>
+            <p>Program Studi Informatika</p>
+            
+
+            <h2>Tentang Saya</h2>
+
+            <p>
+                Saya adalah <b>mahasiswa</b> Informatika yang memiliki minat besar pada teknologi, pengembangan web, animasi, dan desain grafis. Saya senang mempelajari hal-hal baru untuk meningkatkan kemampuan di bidang digital maupun ilmu pengetahuan.
+            </p>
+
+            <p>
+                Selain itu, saya tertarik pada <i>pembuatan game dan pengembangan aplikasi</i>. Saya memiliki pengalaman membuat situs web sederhana, menciptakan animasi menggunakan Blender, serta mengerjakan berbagai proyek berbasis HTML dan CSS untuk promosi game dan ilmu pengetahuan.
+            </p>
+
+            <h2>Tingkat Keahlian</h2>
+
+            <table>
+
+                <tr>
+                    <th>Keahlian</th>
+                    <th>Tingkat</th>
+                </tr>
+
+                <tr>
+                    <td>HTML</td>
+                    <td>Mahir</td>
+                </tr>
+
+                <tr>
+                    <td>Python</td>
+                    <td>Menengah</td>
+                </tr>
+
+                <tr>
+                    <td>Blender</td>
+                    <td>Mahir</td>
+                </tr>
+
+                <tr>
+                    <td>Unreal Engine</td>
+                    <td>Mahir</td>
+                </tr>
+
+                <tr>
+                    <td>Excel</td>
+                    <td>Pemula / Dasar</td>
+                </tr>
+
+                <tr>
+                    <td>Kimia</td>
+                    <td>Menengah</td>
+                </tr>
+                
+            </table>
+
+            
+            
+            <h2>Galeri</h2>
+
+            <div class="gallery" >
+                <img src="gambar_cv_1.png" alt="Gambar galeri" style="border: 1px solid #000000; ">
+                <img src="gambar_cv_3.png" alt="Gambar galeri" style="border: 1px solid #000000; ">
+                <img src="gambar_cv_2.png" alt="Gambar galeri" style="border: 1px solid #000000; ">
+            </div>
+
+            <h2 id="video">Dokumentasi Proyek: Video dan Tangkapan Layar</h2>
+            <p>Video ini menampilkan kegiatan kami di Universitas Siber Asia.</p>
+
+            <h2>Proyek Animasi 3D: [Animasi Akhir Semester Pertama – Universitas Siber Asia]</h2>
+        
+            <ul>
+                <li>Deskripsi: Membuat animasi 3D dan mendokumentasikan seluruh proses produksi, termasuk pemodelan, pemberian tekstur, rigging, animasi, pencahayaan, dan rendering.</li>
+                <li>Alat/Teknologi: Blender</li>
+                <li>Peran/Kontribusi: Merancang dan membuat model 3D serta berkontribusi dalam proses produksi animasi.</li>
+            </ul>
+
+            <iframe style="border-radius:10px;
+            border: 1px solid #000000; margin-top:10px; margin-bottom:20px;" width="560" height="315" src="https://www.youtube.com/embed/KZrmnfEqZXY?si=90uQ673psLesQ1kA" 
+            title="Pemutar video YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <h2>Proyek Animasi 3D: [Algoritma, Struktur Data, dan Python]</h2>
+
+            <div class="video" >
+                <video controls="true" src="video1.mp4" type="video/webm" poster="GAMBAR.png "border: 1px solid #000000;>
+            </div>
+
+            <h2>Tangkapan Layar Proyek</h2>
+            
+            <ul>
+                <li>Deskripsi: Membuat animasi 3D menggunakan Blender dan mendokumentasikan seluruh proses produksi, termasuk pemodelan, pemberian tekstur, rigging, animasi, pencahayaan, dan rendering.</li>
+                <li>Alat/Teknologi: Blender</li>
+                <li>Peran/Kontribusi: Merancang dan membuat model 3D serta berkontribusi dalam proses produksi animasi.</li>
+            </ul>
+
+            <div class="gallery" >
+                <h2 style="width: 100%;">Proyek Animasi 3D: [Normalisasi Sistem Basis Data]</h2>
+                
+                <img src="Blender Anime.png" alt="Gambar galeri" style="border: 1px solid #000000; width: 92%; height: 92%;">
+
+                <h2 style="width: 100%;">Proyek Animasi 3D: [Latar Belakang]</h2>
+
+                <img src="Blender.png" alt="Gambar galeri" style="border: 1px solid #000000; width: 92%; height: 92%;">
+
+                <h2 style="width: 100%;">Proyek Animasi 3D: [Shading]</h2>
+
+                <img src="Blender Shading.png" alt="Gambar galeri" style="border: 1px solid #000000; width: 92%; height: 92%;">
+            </div>
+
+            <h2>Sertifikasi / Pelatihan</h2>
+
+            <ul>
+                <li>Juara Ketiga (Tim) – Kategori Kecerdasan Buatan</li>
+                <li>Bootcamp IT “Tech-Rookie Bootcamp & Challenge – The Future Innovators”</li>
+                <li>UNSIA Festival 2026, Universitas Siber Asia</li>
+                </ul>
+
+            <div class="gallery" >
+                <img src="sertifikat.png" alt="Gambar galeri" style="border: 1px solid #000000; width: 50%; height: 50%;"></div>
+                
+
+            <h2>Prestasi</h2>
+
+            <div class="gallery" >
+                <img src="surat3.png" alt="Gambar galeri" style="border: 1px solid #000000; width: 50%; height: 50%;">
+            </div>
+
+            <ul>
+                <li>Juara Ketiga (Tim) – Kategori Kecerdasan Buatan</li>
+                <li>Bootcamp IT “Tech-Rookie Bootcamp & Challenge – The Future Innovators”</li>
+                <li>UNSIA Festival 2026, Universitas Siber Asia</li>
+            </ul>
+
+            
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        © 2026 Daftar Riwayat Hidup - Freiya Nantan Keona Syarif
+    </div>
 
 </div>
-
-<img src="logo apk/Teknologi.gif" class="gif" alt="game" style="border: 1px solid #003fb4; margin: 30px; width: 20%; ">
-
-</section>
-
-
-<section class="container">
-
-<h2 class="garis">Produk Terbaru</h2>
-
-<div class="produk">
-
-<img src="logo apk/HTML.png">
-
-<h3>HTML</h3>
-
-<p>DOWNLOAD</p>
-
-<button class="bar" onclick="window.location.href='Form pemesanan.html';">
-DOWNLOAD
-</button>
-
-</div>
-
-
-<div class="produk">
-
-<img src="logo apk/bunga.png">
-
-<h3>OPEN MEE STATISTIKA</h3>
-
-<p>DOWNLOAD</p>
-
-<button class="bar" onclick="window.location.href='Form pemesanan2.html';">
-DOWNLOAD
-</button>
-
-</div>
-
-<div class="produk">
-
-<img src="logo apk/logo game.png">
-
-<h3>GAME KOST BARU</h3>
-
-<p>DOWNLOAD</p>
-
-<button class="bar" onclick="window.location.href='Form pemesanan3.html';">
-DOWNLOAD
-</button>
-
-</div>
-
-</div>
-
-<div class="produk">
-
-<img src="logo apk/TANDATANYA.png">
-
-<h3>HTML</h3>
-
-<p>DOWNLOAD</p>
-
-<button class="bar" onclick="window.location.href='-';">
-DOWNLOAD
-</button>
-
-</div>
-
-</div>
-
-<div class="produk">
-
-<img src="logo apk/TANDATANYA.png">
-
-<h3>HTML</h3>
-
-<p>DOWNLOAD</p>
-
-<button class="bar" onclick="window.location.href='-';">
-DOWNLOAD
-</button>
-
-</div>
-
-</section>
-<footer>
-
-<p>
-© 2026 Freiya Store E-Commerce
-</p>
-
-</footer>
-
-
-<script>
-
-function beli(nama){
-
-alert(
-"Produk "+nama+" berhasil masuk keranjang"
-);
-
-}
-
-
-function keranjang(){
-
-alert(
-"Selamat datang di Freiya Store resmi dibuka untuk kebutuhan"
-);
-
-}
-
-</script>
-
-
 </body>
 </html>
